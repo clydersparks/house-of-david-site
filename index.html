@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="House of David AFH — compassionate, home-like adult family care at 8737 Queens Ct, Olympia, Washington." />
+  <meta name="theme-color" id="theme-color" content="#fffdf9" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <title>House of David AFH | A Place That Feels Like Home</title>
+
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      const storageKey = 'house-of-david-theme';
+      const media = window.matchMedia('(prefers-color-scheme: dark)');
+      let savedTheme = null;
+
+      try {
+        savedTheme = localStorage.getItem(storageKey);
+      } catch (error) {
+        savedTheme = null;
+      }
+
+      const theme = savedTheme === 'light' || savedTheme === 'dark'
+        ? savedTheme
+        : (media.matches ? 'dark' : 'light');
+
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+
+  <!-- Fonts: refined serif for headings + clean humanist sans for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top information bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><i class="fa-solid fa-location-dot"></i> 8737 Queens Ct, Olympia, WA</span>
+      <span><i class="fa-solid fa-clock"></i> Care and support when you need it</span>
+      <a href="tel:+13608102158"><i class="fa-solid fa-phone"></i> (360) 810-2158</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="House of David AFH home">
+        <img class="logo-light" src="logo.png" alt="House of David Adult Family Home logo">
+        <img class="logo-dark" src="logo-dark.png" alt="" aria-hidden="true">
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#care">Our Care</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#locations">Locations</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+            Contact <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="contact.html" class=""><i class="fa-solid fa-envelope"></i><span>Contact Us</span></a>
+            <a href="schedule-tour.html" class=""><i class="fa-solid fa-calendar-check"></i><span>Schedule a Tour</span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener"><i class="fa-solid fa-location-arrow"></i><span>Get Directions</span></a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-controls">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          <span class="sr-only">Switch theme</span>
+        </button>
+
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><i class="fa-solid fa-house"></i> Adult Family Home</span>
+          <h1>Quality care in a place that feels <em>like home.</em></h1>
+          <p>
+            House of David AFH provides a warm, supportive environment where residents
+            can receive attentive care while maintaining the comfort and dignity of home.
+          </p>
+
+          <div class="hero-actions">
+            <a href="schedule-tour.html" class="btn btn-primary">Schedule a Tour <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#services" class="btn btn-secondary">Explore Our Care</a>
+          </div>
+
+          <div class="hero-note">
+            <div>
+              <strong>Compassionate, experienced care</strong>
+              <span>Built on decades of patient-care experience.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-photo">
+            <div class="photo-overlay"></div>
+            <div class="hero-card">
+              <span class="card-icon"><i class="fa-solid fa-shield"></i></span>
+              <div>
+                <strong>Comfort &amp; dignity</strong>
+                <small>A supportive home environment</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-stat">
+            <strong>Decades</strong>
+            <span>of patient-care experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro / trust -->
+    <section class="intro section">
+      <div class="container intro-grid">
+        <div>
+          <span class="eyebrow">A home with purpose</span>
+          <h2>Care that puts the person first.</h2>
+        </div>
+        <div class="intro-text">
+          <p>
+            At House of David AFH, we understand that choosing a care home is about
+            much more than services. It is about trust, comfort, safety and knowing
+            that your loved one is treated with respect.
+          </p>
+          <p>
+            Our approach combines experienced care with the warmth of a home-like
+            setting, helping residents feel supported while preserving their dignity
+            and individuality.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section section-soft" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">What we provide</span>
+            <h2>Everyday support, thoughtfully delivered.</h2>
+          </div>
+          <p>
+            Our services are designed around comfort, safety and the practical needs
+            of each resident.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-icon"><i class="fa-solid fa-utensils"></i></span>
+            <h3>Home-Cooked Meals</h3>
+            <p>Three home-cooked meals served daily with snacks in between meals.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon"><i class="fa-solid fa-shirt"></i></span>
+            <h3>Housekeeping &amp; Laundry</h3>
+            <p>Weekly housekeeping and laundry services, and as needed.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon"><i class="fa-solid fa-pills"></i></span>
+            <h3>Health Maintenance</h3>
+            <p>Medication assistance under the supervision of a nurse delegator and health monitoring as part of attentive daily care.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon"><i class="fa-solid fa-calendar-check"></i></span>
+            <h3>Care Coordination</h3>
+            <p>Coordination of appointments and care with your physicians and other medical providers.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon"><i class="fa-solid fa-person-dress"></i></span>
+            <h3>Personal Care</h3>
+            <p>Assistance with bathing, dressing, grooming, hygiene and everyday routines per resident care plan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <div class="about-photo">
+            <span>HOUSE OF DAVID</span>
+          </div>
+          <div class="experience-badge">
+            <strong>Care with<br>experience</strong>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <span class="eyebrow">Our story</span>
+          <h2>A vision shaped by decades of caring for others.</h2>
+          <p>
+            Our owners, David and Irene, have both been working in long term care for
+            decades. When they moved to Washington, they brought that education,
+            experience and passion with them.
+          </p>
+          <p>
+            Their vision was simple: create a place where people could receive
+            quality, long-term care while still experiencing the warmth and familiarity
+            of home.
+          </p>
+          <p>
+            That vision led to the opening of House of David AFH in Olympia and has
+            since grown to include House of Blessings AFH in Yelm.
+          </p>
+
+          <div class="signature-row">
+            <div class="signature">David &amp; Irene</div>
+            <span>Founders &amp; Care Team</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conditions / clinical experience -->
+    <section class="care section section-dark" id="care">
+      <div class="container">
+        <div class="care-heading">
+          <span class="eyebrow eyebrow-light">Experienced care</span>
+          <h2>Experience with diverse and complex care needs.</h2>
+          <p>
+            Our care experience includes a range of conditions and support needs.
+            The following list reflects experience with past residents and is not all-inclusive.
+          </p>
+        </div>
+
+        <div class="condition-layout">
+          <div class="condition-intro">
+            <div class="condition-mark"><i class="fa-solid fa-notes-medical"></i></div>
+            <h3>Individual needs matter.</h3>
+            <p>
+              We work to understand each resident as an individual and coordinate
+              appropriate support with families and healthcare providers.
+            </p>
+          </div>
+
+          <div class="condition-list">
+            <span><i class="fa-solid fa-check"></i> Alzheimer’s &amp; other dementias</span>
+            <span><i class="fa-solid fa-check"></i> Parkinson’s disease</span>
+            <span><i class="fa-solid fa-check"></i> Congestive heart failure</span>
+            <span><i class="fa-solid fa-check"></i> Type I &amp; Type II diabetes</span>
+            <span><i class="fa-solid fa-check"></i> Arthritis &amp; osteoporosis</span>
+            <span><i class="fa-solid fa-check"></i> Hypertension</span>
+            <span><i class="fa-solid fa-check"></i> COPD</span>
+            <span><i class="fa-solid fa-check"></i> Depression &amp; anxiety</span>
+            <span><i class="fa-solid fa-check"></i> Stroke care</span>
+            <span><i class="fa-solid fa-check"></i> Asthma</span>
+            <span><i class="fa-solid fa-check"></i> Atrial fibrillation</span>
+            <span><i class="fa-solid fa-check"></i> Coronary artery disease</span>
+            <span><i class="fa-solid fa-check"></i> Frequent falls</span>
+            <span><i class="fa-solid fa-check"></i> Behavioral support</span>
+            <span><i class="fa-solid fa-check"></i> Wound &amp; catheter care</span>
+            <span><i class="fa-solid fa-check"></i> Feeding tubes, including G-tubes</span>
+            <span><i class="fa-solid fa-check"></i> Chronic kidney disease</span>
+            <span><i class="fa-solid fa-check"></i> Tubes, lines, drains &amp; ports</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- On-site care -->
+    <section class="providers section">
+      <div class="container providers-grid">
+        <div class="providers-copy">
+          <span class="eyebrow">Convenient access to care</span>
+          <h2>Medical services can come to the home.</h2>
+          <p>
+            We understand how difficult it can be for residents with limited mobility
+            to travel into the community. That's why we coordinate access to a range of
+            visiting and on-site services.
+          </p>
+
+          <div class="provider-note">
+            <i class="fa-solid fa-house-medical"></i>
+            <span>Designed to make necessary care more accessible and convenient.</span>
+          </div>
+        </div>
+
+        <div class="provider-grid">
+          <div><i class="fa-solid fa-user-doctor"></i><span>Primary care providers</span></div>
+          <div><i class="fa-solid fa-user-nurse"></i><span>Long-term care providers</span></div>
+          <div><i class="fa-solid fa-shoe-prints"></i><span>Podiatrists</span></div>
+          <div><i class="fa-solid fa-x-ray"></i><span>X-ray services</span></div>
+          <div><i class="fa-solid fa-vial"></i><span>Lab Services</span></div>
+          <div><i class="fa-solid fa-truck-medical"></i><span>Traveling urgent care</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery preview -->
+    <section class="gallery-preview section" id="gallery">
+      <div class="container">
+        <div class="section-heading gallery-heading">
+          <div>
+            <span class="eyebrow">Life, connection &amp; joy</span>
+            <h2>Moments that feel like home.</h2>
+          </div>
+          <div class="gallery-heading-copy">
+            <p>A glimpse of the creativity, companionship and everyday activities we value in a warm home environment.</p>
+            <a class="gallery-text-link" href="gallery.html">View full gallery <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="gallery-preview-grid">
+          <a class="gallery-preview-item gallery-preview-large" href="gallery.html" aria-label="View full gallery">
+            <img src="https://images.unsplash.com/photo-1765604551414-3917c981a703?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Older adults enjoying a board game together" loading="lazy">
+            <span>Board games</span>
+          </a>
+          <a class="gallery-preview-item" href="gallery.html" aria-label="View full gallery">
+            <img src="https://images.unsplash.com/photo-1775194177205-c09989299d6b?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Older adult enjoying a community shopping outing" loading="lazy">
+            <span>Community outings</span>
+          </a>
+          <a class="gallery-preview-item" href="gallery.html" aria-label="View full gallery">
+            <img src="https://images.unsplash.com/photo-1761666519794-ad6fbcef058b?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Senior friends looking through a photo album together" loading="lazy">
+            <span>Sharing memories</span>
+          </a>
+          <a class="gallery-preview-item" href="gallery.html" aria-label="View full gallery">
+            <img src="https://images.unsplash.com/photo-1773227060818-32d6e4300fba?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Older couple smiling while dancing together" loading="lazy">
+            <span>Music &amp; movement</span>
+          </a>
+        </div>
+
+        <div class="activity-chips" aria-label="Activities residents may enjoy">
+          <span><i class="fa-solid fa-chess-board"></i> Board games</span>
+          <span><i class="fa-solid fa-music"></i> Music</span>
+          <span><i class="fa-solid fa-people-roof"></i> Senior center</span>
+          <span><i class="fa-solid fa-bag-shopping"></i> Shopping</span>
+          <span><i class="fa-solid fa-utensils"></i> Lunch outings</span>
+          <span><i class="fa-solid fa-ticket"></i> State Fair visits</span>
+        </div>
+
+        <div class="gallery-preview-action">
+          <a class="btn btn-primary" href="gallery.html">Explore the Gallery <i class="fa-solid fa-images"></i></a>
+</div>
+      </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="locations section section-soft" id="locations">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Our homes</span>
+          <h2>Growing our vision of quality care.</h2>
+          <p>
+            House of David's vision has grown beyond Olympia, bringing the same
+            home-like philosophy to another Washington community.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <article class="location-card featured">
+            <div class="location-icon"><i class="fa-solid fa-house"></i></div>
+            <span class="location-label">Our original home</span>
+            <h3>House of David AFH</h3>
+            <p>8737 Queens Ct, Olympia, WA 98513</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener">Get directions <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="location-card">
+            <div class="location-icon"><i class="fa-solid fa-house-chimney"></i></div>
+            <span class="location-label">Our growing family</span>
+            <h3>House of Blessings AFH</h3>
+            <p>Yelm, Washington</p>
+            <a href="contact.html">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+
+        <div class="location-map-wrap">
+          <div class="map-copy">
+            <span class="eyebrow">Visit us in Olympia</span>
+            <h3>House of David AFH</h3>
+            <p><i class="fa-solid fa-location-dot"></i> 8737 Queens Ct, Olympia, WA 98513</p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:+13608102158">Business: (360) 810-2158</a></p>
+            <p><i class="fa-solid fa-mobile-screen-button"></i> <a href="tel:+13023390579">David Bulindah: (302) 339-0579</a></p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:houseofdavidolympia@gmail.com">houseofdavidolympia@gmail.com</a></p>
+            <a class="map-directions" href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener">Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="map-frame">
+            <iframe
+              title="Map showing House of David AFH at 8737 Queens Ct, Olympia, WA 98513"
+              src="https://www.google.com/maps?q=8737%20Queens%20Ct%2C%20Olympia%2C%20WA%2098513&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Frequently asked questions -->
+    <section class="faq section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro">
+          <span class="eyebrow">Frequently asked questions</span>
+          <h2>Helpful answers for families.</h2>
+          <p>Choosing a care home comes with important questions. Here are a few answers to help you understand House of David AFH and plan your next step.</p>
+          <a class="btn btn-secondary" href="contact.html">Ask Us a Question <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>What is an Adult Family Home?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></summary>
+            <div class="faq-answer"><p>An Adult Family Home provides personal care and support in a smaller, residential setting. The goal is to combine needed assistance with the comfort and familiarity of a home-like environment.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What everyday services does House of David provide?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></summary>
+            <div class="faq-answer"><p>Our listed services include home-cooked meals, housekeeping and laundry, personal care, medication assistance, health monitoring, care coordination, behavioral-health support.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What kinds of care needs do you have experience supporting?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></summary>
+            <div class="faq-answer"><p>Our experience includes dementia care, Parkinson’s disease, diabetes, stroke care, COPD, wound and catheter care, dialysis-related needs, behavioral support and other complex conditions. Every prospective resident is considered individually so we can discuss whether the home is an appropriate fit.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you help with medications and healthcare coordination?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></summary>
+            <div class="faq-answer"><p>Yes. Our services include medication assistance and health monitoring, along with coordination of appointments and care with physicians and other providers.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can medical providers visit the home?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></summary>
+            <div class="faq-answer"><p>House of David offers access to a range of visiting and on-site services, including primary and long-term care providers, podiatry, X-ray services, lab services and traveling urgent care. Contact us to discuss current availability for a specific service.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>How can I schedule a tour?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></summary>
+            <div class="faq-answer"><p>You can use our Schedule a Tour page to prepare a visit request, call the business line at <a href="tel:+13608102158">(360) 810-2158</a>, or contact David directly at <a href="tel:+13023390579">(302) 339-0579</a>.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Where is House of David AFH located?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></summary>
+            <div class="faq-answer"><p>House of David AFH is located at 8737 Queens Ct, Olympia, WA 98513. You can use the Get Directions option in the Contact menu to open the location in Google Maps.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-cta" id="contact">
+      <div class="container cta-inner">
+        <div>
+          <span class="eyebrow eyebrow-light">Let's talk</span>
+          <h2>Looking for a place that feels like home?</h2>
+          <p>Contact House of David AFH to learn more about our care or choose a convenient time to visit.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-white" href="schedule-tour.html"><i class="fa-solid fa-calendar-check"></i> Schedule a Tour</a>
+          <a class="btn btn-outline-white" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo-dark.png" alt="House of David Adult Family Home">
+        <p>Quality, long-term care in a place that feels like home.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#care">Our Care</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="index.html#faq">FAQs</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="contact.html"><i class="fa-solid fa-envelope-open-text"></i> Contact Us</a>
+        <a href="schedule-tour.html"><i class="fa-solid fa-calendar-check"></i> Schedule a Tour</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener"><i class="fa-solid fa-location-arrow"></i> Get Directions</a>
+        <a href="tel:+13608102158"><i class="fa-solid fa-phone"></i> Business: (360) 810-2158</a>
+        <a href="tel:+13023390579"><i class="fa-solid fa-mobile-screen-button"></i> David: (302) 339-0579</a>
+        <a href="mailto:houseofdavidolympia@gmail.com"><i class="fa-solid fa-envelope"></i> houseofdavidolympia@gmail.com</a>
+        <span><i class="fa-solid fa-location-dot"></i> 8737 Queens Ct, Olympia, WA 98513</span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 House of David AFH. All rights reserved.</span>
+      <a class="footer-website-cta" href="https://wa.me/254743362677?text=Hello%2C%20I%20saw%20the%20House%20of%20David%20website%20and%20I%20would%20like%20a%20website%20like%20this." target="_blank" rel="noopener noreferrer" aria-label="Want a website like this? Message CSparks Developers on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Want a website like this?
+      </a>
+      <span>Adult Family Home</span>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

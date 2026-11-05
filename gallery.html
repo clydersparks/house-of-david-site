@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore warm, joyful lifestyle moments that reflect the home-like care philosophy of House of David AFH in Olympia, Washington." />
+  <meta name="theme-color" id="theme-color" content="#fffdf9" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <title>Gallery | House of David AFH</title>
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      const storageKey = 'house-of-david-theme';
+      const media = window.matchMedia('(prefers-color-scheme: dark)');
+      let savedTheme = null;
+      try { savedTheme = localStorage.getItem(storageKey); } catch (error) {}
+      document.documentElement.dataset.theme = savedTheme === 'light' || savedTheme === 'dark'
+        ? savedTheme : (media.matches ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><i class="fa-solid fa-location-dot"></i> 8737 Queens Ct, Olympia, WA</span>
+      <span><i class="fa-solid fa-clock"></i> Care and support when you need it</span>
+      <a href="tel:+13608102158"><i class="fa-solid fa-phone"></i> (360) 810-2158</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html#home" class="brand" aria-label="House of David AFH home">
+        <img class="logo-light" src="logo.png" alt="House of David Adult Family Home logo">
+        <img class="logo-dark" src="logo-dark.png" alt="" aria-hidden="true">
+      </a>
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#care">Our Care</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+            Contact <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="contact.html" class=""><i class="fa-solid fa-envelope"></i><span>Contact Us</span></a>
+            <a href="schedule-tour.html" class=""><i class="fa-solid fa-calendar-check"></i><span>Schedule a Tour</span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener"><i class="fa-solid fa-location-arrow"></i><span>Get Directions</span></a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-controls">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i><span class="sr-only">Switch theme</span>
+        </button>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-page-hero">
+      <div class="container">
+        <span class="eyebrow">Our gallery</span>
+        <h1>Joy in the everyday moments.</h1>
+        <p>Connection, creativity, conversation and simple activities can make a house feel more like home. Explore a few lifestyle moments that reflect the atmosphere we value.</p>
+      </div>
+    </section>
+
+    <section class="gallery-page section">
+      <div class="container">
+        <div class="full-gallery-grid">
+          <button class="full-gallery-item" type="button" data-caption="Board games together">
+            <img src="https://images.unsplash.com/photo-1765604551414-3917c981a703?auto=format&amp;fit=crop&amp;w=1500&amp;q=82" alt="Older adults enjoying a board game together" loading="eager">
+            <span class="gallery-caption">Board games together <i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </button>
+          <button class="full-gallery-item" type="button" data-caption="Community shopping outing">
+            <img src="https://images.unsplash.com/photo-1775194177205-c09989299d6b?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Older adult enjoying a community shopping outing" loading="lazy">
+            <span class="gallery-caption">Community shopping outing <i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </button>
+          <button class="full-gallery-item" type="button" data-caption="Sharing memories">
+            <img src="https://images.unsplash.com/photo-1761666519794-ad6fbcef058b?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Senior friends looking through a photo album together" loading="lazy">
+            <span class="gallery-caption">Sharing memories <i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </button>
+          <button class="full-gallery-item" type="button" data-caption="A quiet reading moment">
+            <img src="https://images.unsplash.com/photo-1575260179532-693bd89dfe73?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Older woman smiling while reading a book" loading="lazy">
+            <span class="gallery-caption">A quiet reading moment <i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </button>
+          <button class="full-gallery-item" type="button" data-caption="Friendship and conversation">
+            <img src="https://images.unsplash.com/photo-1779126299550-07130a7098a7?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Two older men smiling together indoors" loading="lazy">
+            <span class="gallery-caption">Friendship &amp; conversation <i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </button>
+          <button class="full-gallery-item" type="button" data-caption="Music and movement">
+            <img src="https://images.unsplash.com/photo-1773227060818-32d6e4300fba?auto=format&amp;fit=crop&amp;w=1500&amp;q=82" alt="Older couple smiling while dancing together" loading="lazy">
+            <span class="gallery-caption">Music &amp; movement <i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </button>
+          <button class="full-gallery-item" type="button" data-caption="Fun and relaxation">
+            <img src="https://images.unsplash.com/photo-1758686254501-afb794642cf3?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Older couple relaxing together with a video game and a book" loading="lazy">
+            <span class="gallery-caption">Fun &amp; relaxation <i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </button>
+          <button class="full-gallery-item" type="button" data-caption="Comfort and companionship">
+            <img src="https://images.unsplash.com/photo-1758686253706-15c16f83743a?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Happy older couple smiling together at home" loading="lazy">
+            <span class="gallery-caption">Comfort &amp; companionship <i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </button>
+        </div>
+<div class="gallery-back">
+          <a class="btn btn-secondary" href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-cta">
+      <div class="container cta-inner">
+        <div>
+          <span class="eyebrow eyebrow-light">Come see for yourself</span>
+          <h2>Would you like to visit House of David?</h2>
+          <p>Contact us to learn more about our care or choose a convenient time to visit.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-white" href="schedule-tour.html"><i class="fa-solid fa-calendar-check"></i> Schedule a Tour</a>
+          <a class="btn btn-outline-white" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo-dark.png" alt="House of David Adult Family Home">
+        <p>Quality, long-term care in a place that feels like home.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#care">Our Care</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="index.html#faq">FAQs</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="contact.html"><i class="fa-solid fa-envelope-open-text"></i> Contact Us</a>
+        <a href="schedule-tour.html"><i class="fa-solid fa-calendar-check"></i> Schedule a Tour</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener"><i class="fa-solid fa-location-arrow"></i> Get Directions</a>
+        <a href="tel:+13608102158"><i class="fa-solid fa-phone"></i> Business: (360) 810-2158</a>
+        <a href="tel:+13023390579"><i class="fa-solid fa-mobile-screen-button"></i> David: (302) 339-0579</a>
+        <a href="mailto:houseofdavidolympia@gmail.com"><i class="fa-solid fa-envelope"></i> houseofdavidolympia@gmail.com</a>
+        <span><i class="fa-solid fa-location-dot"></i> 8737 Queens Ct, Olympia, WA 98513</span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 House of David AFH. All rights reserved.</span>
+      <a class="footer-website-cta" href="https://wa.me/254743362677?text=Hello%2C%20I%20saw%20the%20House%20of%20David%20website%20and%20I%20would%20like%20a%20website%20like%20this." target="_blank" rel="noopener noreferrer" aria-label="Want a website like this? Message CSparks Developers on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Want a website like this?
+      </a>
+      <span>Adult Family Home</span>
+    </div>
+  </footer>
+
+  <div class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer" aria-hidden="true">
+    <div class="gallery-lightbox-inner">
+      <button class="gallery-lightbox-close" type="button" aria-label="Close image"><i class="fa-solid fa-xmark"></i></button>
+      <img src="" alt="">
+      <p class="gallery-lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script src="site.js"></script>
+</body>
+</html>

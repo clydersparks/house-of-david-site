@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact House of David AFH in Olympia, Washington. Call, email, get directions or send a message to learn more about care." />
+  <meta name="theme-color" id="theme-color" content="#fffdf9" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <title>Contact Us | House of David AFH</title>
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      const storageKey = 'house-of-david-theme';
+      const media = window.matchMedia('(prefers-color-scheme: dark)');
+      let savedTheme = null;
+      try { savedTheme = localStorage.getItem(storageKey); } catch (error) {}
+      document.documentElement.dataset.theme = savedTheme === 'light' || savedTheme === 'dark'
+        ? savedTheme : (media.matches ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><i class="fa-solid fa-location-dot"></i> 8737 Queens Ct, Olympia, WA</span>
+      <span><i class="fa-solid fa-clock"></i> Care and support when you need it</span>
+      <a href="tel:+13608102158"><i class="fa-solid fa-phone"></i> (360) 810-2158</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html#home" class="brand" aria-label="House of David AFH home">
+        <img class="logo-light" src="logo.png" alt="House of David Adult Family Home logo">
+        <img class="logo-dark" src="logo-dark.png" alt="" aria-hidden="true">
+      </a>
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#care">Our Care</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+            Contact <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="contact.html" class="is-current"><i class="fa-solid fa-envelope"></i><span>Contact Us</span></a>
+            <a href="schedule-tour.html" class=""><i class="fa-solid fa-calendar-check"></i><span>Schedule a Tour</span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener"><i class="fa-solid fa-location-arrow"></i><span>Get Directions</span></a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-controls">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i><span class="sr-only">Switch theme</span>
+        </button>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="inner-page-hero facility-photo-hero">
+      <div class="container inner-page-hero-grid">
+        <div>
+          <span class="eyebrow">Contact House of David</span>
+          <h1>We’re here to answer your questions.</h1>
+          <p>Reach out to learn more about our care, discuss a loved one’s needs or arrange a visit to our Olympia home.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-page section">
+      <div class="container contact-info-layout">
+        <div class="contact-details-panel">
+          <span class="eyebrow">Contact details</span>
+          <h2>Let’s talk about care.</h2>
+          <p>Whether you have questions about care, availability or the next steps for your loved one, you can reach House of David directly using the details below.</p>
+
+          <div class="contact-methods contact-methods-grid">
+            <a class="contact-method" href="tel:+13608102158">
+              <span class="contact-method-icon"><i class="fa-solid fa-phone"></i></span>
+              <span><small>Business line</small><strong>(360) 810-2158</strong><em>Call House of David directly</em></span>
+            </a>
+            <a class="contact-method" href="tel:+13023390579">
+              <span class="contact-method-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+              <span><small>David Bulindah</small><strong>(302) 339-0579</strong><em>Speak with David</em></span>
+            </a>
+            <a class="contact-method" href="mailto:houseofdavidolympia@gmail.com">
+              <span class="contact-method-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span><small>Email</small><strong>houseofdavidolympia@gmail.com</strong><em>Send questions by email</em></span>
+            </a>
+            <a class="contact-method" href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener">
+              <span class="contact-method-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <span><small>Olympia home</small><strong>8737 Queens Ct, Olympia, WA 98513</strong><em>Open the location in Google Maps</em></span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="contact-help-card">
+          <span class="eyebrow">We can help with</span>
+          <h2>Start with the question that matters most.</h2>
+          <div class="contact-help-list">
+            <div><i class="fa-solid fa-house-medical"></i><span><strong>Care & services</strong><small>Ask about daily care, health maintenance and support available in the home.</small></span></div>
+            <div><i class="fa-solid fa-bed"></i><span><strong>Current availability</strong><small>Contact the home to ask about openings and whether the setting may be a good fit.</small></span></div>
+            <div><i class="fa-solid fa-people-roof"></i><span><strong>Your loved one’s needs</strong><small>Talk through care needs, routines and the kind of support your family is looking for.</small></span></div>
+            <div><i class="fa-solid fa-calendar-check"></i><span><strong>Planning a visit</strong><small>Ready to see the home? Visit the tour page for details on arranging a time.</small></span></div>
+          </div>
+          <a class="btn btn-primary contact-help-cta" href="schedule-tour.html"><i class="fa-solid fa-calendar-check"></i> View Tour Details</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact-map-section section section-soft">
+      <div class="container location-map-wrap">
+        <div class="map-copy">
+          <span class="eyebrow">Visit us in Olympia</span>
+          <h3>House of David AFH</h3>
+          <p><i class="fa-solid fa-location-dot"></i> 8737 Queens Ct, Olympia, WA 98513</p>
+          <p>Use the map to preview our Olympia location or open Google Maps for turn-by-turn directions.</p>
+          <a class="map-directions" href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener">Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="map-frame">
+          <iframe title="Map showing House of David AFH at 8737 Queens Ct, Olympia, WA 98513" src="https://www.google.com/maps?q=8737%20Queens%20Ct%2C%20Olympia%2C%20WA%2098513&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo-dark.png" alt="House of David Adult Family Home">
+        <p>Quality, long-term care in a place that feels like home.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#care">Our Care</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="index.html#faq">FAQs</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="contact.html"><i class="fa-solid fa-envelope-open-text"></i> Contact Us</a>
+        <a href="schedule-tour.html"><i class="fa-solid fa-calendar-check"></i> Schedule a Tour</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener"><i class="fa-solid fa-location-arrow"></i> Get Directions</a>
+        <a href="tel:+13608102158"><i class="fa-solid fa-phone"></i> Business: (360) 810-2158</a>
+        <a href="tel:+13023390579"><i class="fa-solid fa-mobile-screen-button"></i> David: (302) 339-0579</a>
+        <a href="mailto:houseofdavidolympia@gmail.com"><i class="fa-solid fa-envelope"></i> houseofdavidolympia@gmail.com</a>
+        <span><i class="fa-solid fa-location-dot"></i> 8737 Queens Ct, Olympia, WA 98513</span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 House of David AFH. All rights reserved.</span>
+      <a class="footer-website-cta" href="https://wa.me/254743362677?text=Hello%2C%20I%20saw%20the%20House%20of%20David%20website%20and%20I%20would%20like%20a%20website%20like%20this." target="_blank" rel="noopener noreferrer" aria-label="Want a website like this? Message CSparks Developers on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Want a website like this?
+      </a>
+      <span>Adult Family Home</span>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

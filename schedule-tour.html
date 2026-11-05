@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Request a visit to House of David AFH at 8737 Queens Ct in Olympia, Washington." />
+  <meta name="theme-color" id="theme-color" content="#fffdf9" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <title>Schedule a Tour | House of David AFH</title>
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      const storageKey = 'house-of-david-theme';
+      const media = window.matchMedia('(prefers-color-scheme: dark)');
+      let savedTheme = null;
+      try { savedTheme = localStorage.getItem(storageKey); } catch (error) {}
+      document.documentElement.dataset.theme = savedTheme === 'light' || savedTheme === 'dark'
+        ? savedTheme : (media.matches ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><i class="fa-solid fa-location-dot"></i> 8737 Queens Ct, Olympia, WA</span>
+      <span><i class="fa-solid fa-clock"></i> Care and support when you need it</span>
+      <a href="tel:+13608102158"><i class="fa-solid fa-phone"></i> (360) 810-2158</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html#home" class="brand" aria-label="House of David AFH home">
+        <img class="logo-light" src="logo.png" alt="House of David Adult Family Home logo">
+        <img class="logo-dark" src="logo-dark.png" alt="" aria-hidden="true">
+      </a>
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#care">Our Care</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+            Contact <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="contact.html" class=""><i class="fa-solid fa-envelope"></i><span>Contact Us</span></a>
+            <a href="schedule-tour.html" class="is-current"><i class="fa-solid fa-calendar-check"></i><span>Schedule a Tour</span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener"><i class="fa-solid fa-location-arrow"></i><span>Get Directions</span></a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-controls">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i><span class="sr-only">Switch theme</span>
+        </button>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="inner-page-hero tour-hero facility-photo-hero">
+      <div class="container inner-page-hero-grid">
+        <div>
+          <span class="eyebrow">Schedule a tour</span>
+          <h1>Come see what home-like care feels like.</h1>
+          <p>See the Olympia home, ask questions in person and learn more about the care and daily environment at House of David.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tour-page section">
+      <div class="container tour-details-layout">
+        <div class="tour-copy">
+          <span class="eyebrow">Plan your visit</span>
+          <h2>A simple first step for your family.</h2>
+          <p>A tour gives you an opportunity to see the home, ask questions and talk about the kind of support your loved one may need.</p>
+
+          <div class="tour-steps">
+            <div><span>1</span><p><strong>Contact the home.</strong> Call or email House of David and let us know you would like to arrange a tour.</p></div>
+            <div><span>2</span><p><strong>Choose a suitable time.</strong> David or the House of David team can help coordinate a visit that works for you.</p></div>
+            <div><span>3</span><p><strong>Visit and ask questions.</strong> See the home, discuss care needs and learn what daily life can look like.</p></div>
+          </div>
+
+          <div class="tour-expect-card">
+            <div class="tour-expect-heading"><span><small>During your visit</small><strong>Take your time and get to know the home.</strong></span></div>
+            <ul class="tour-expect-list">
+              <li><i class="fa-solid fa-check"></i> See the shared living spaces and home environment</li>
+              <li><i class="fa-solid fa-check"></i> Ask about care routines and available services</li>
+              <li><i class="fa-solid fa-check"></i> Discuss your loved one’s individual needs</li>
+              <li><i class="fa-solid fa-check"></i> Learn about next steps and current availability</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="tour-contact-card">
+          <span class="eyebrow">Arrange a tour</span>
+          <h2>Choose the easiest way to reach us.</h2>
+          <p>Tour times are arranged directly with House of David so the team can confirm a time that works for everyone.</p>
+
+          <div class="tour-contact-options">
+            <a href="tel:+13608102158">
+              <span class="tour-option-icon"><i class="fa-solid fa-phone-volume"></i></span>
+              <span><small>Call the business line</small><strong>(360) 810-2158</strong></span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="tel:+13023390579">
+              <span class="tour-option-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+              <span><small>Call David directly</small><strong>(302) 339-0579</strong></span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="mailto:houseofdavidolympia@gmail.com?subject=House%20of%20David%20Tour%20Request">
+              <span class="tour-option-icon"><i class="fa-solid fa-envelope-open-text"></i></span>
+              <span><small>Email a tour request</small><strong>houseofdavidolympia@gmail.com</strong></span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="tour-address-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><small>House of David AFH</small><strong>8737 Queens Ct<br>Olympia, WA 98513</strong></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tour-location-strip">
+      <div class="container tour-location-inner">
+        <div><i class="fa-solid fa-location-dot"></i><span><small>Tour location</small><strong>8737 Queens Ct, Olympia, WA 98513</strong></span></div>
+        <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener">Get Directions <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo-dark.png" alt="House of David Adult Family Home">
+        <p>Quality, long-term care in a place that feels like home.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#care">Our Care</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="index.html#faq">FAQs</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="contact.html"><i class="fa-solid fa-envelope-open-text"></i> Contact Us</a>
+        <a href="schedule-tour.html"><i class="fa-solid fa-calendar-check"></i> Schedule a Tour</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=8737+Queens+Ct%2C+Olympia%2C+WA+98513" target="_blank" rel="noopener"><i class="fa-solid fa-location-arrow"></i> Get Directions</a>
+        <a href="tel:+13608102158"><i class="fa-solid fa-phone"></i> Business: (360) 810-2158</a>
+        <a href="tel:+13023390579"><i class="fa-solid fa-mobile-screen-button"></i> David: (302) 339-0579</a>
+        <a href="mailto:houseofdavidolympia@gmail.com"><i class="fa-solid fa-envelope"></i> houseofdavidolympia@gmail.com</a>
+        <span><i class="fa-solid fa-location-dot"></i> 8737 Queens Ct, Olympia, WA 98513</span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 House of David AFH. All rights reserved.</span>
+      <a class="footer-website-cta" href="https://wa.me/254743362677?text=Hello%2C%20I%20saw%20the%20House%20of%20David%20website%20and%20I%20would%20like%20a%20website%20like%20this." target="_blank" rel="noopener noreferrer" aria-label="Want a website like this? Message CSparks Developers on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Want a website like this?
+      </a>
+      <span>Adult Family Home</span>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
